@@ -19,5 +19,5 @@ match http_status: # Match is basically the same as switch statement
         print('Bad Request')
     case 500 | 501:
         print('Server Error')
-    case _:
+    case _: # The default class(like else statement)
         print("Unknown")
