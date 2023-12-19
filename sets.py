@@ -1,4 +1,4 @@
-# NOTE: Sets do not take duplicate values
+# NOTE: Sets do not take duplicate values      |     They do not have an index value either(is not a sequence)
 set_a = {1,2,3,4,5}
 set_b = {4,5,6,7,8}
 
