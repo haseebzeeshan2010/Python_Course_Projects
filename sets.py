@@ -12,3 +12,4 @@ print(set_a.union(set_b)) # joins the two sets, minus the duplicate values
 #print(set_a | set_b)
 
 print(set_a.symmetric_difference(set_b)) # displays elements in set a or b, but not ones that occur in both 
+#Can also be done like this: print(set_a ^ set_b)
