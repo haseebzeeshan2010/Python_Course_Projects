@@ -11,3 +11,8 @@ try:
 except Exception as e: # e is the actual error, so in this example both the custom message and the error are output
     print("Something went wrong!", e)
     print(e.__class__) # outputs class of error
+
+try:
+    ans = divide_by(40,0)
+except ZeroDivisionError as e: # deals with a specific type of error
+    print(e, "We cannot divide by zero")
