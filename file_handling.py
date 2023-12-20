@@ -10,8 +10,8 @@ file.close()
 #-------------------------------------------------------------------
 
 with open ('file_handling_test.txt', mode = "r") as file: # Newer, better way of handling files + is better at exception handling + automatically closes file
-    data = file.readline()
-
+    data = file.readline()# NOTE: putting a number in the round brackets will mean that it will read only a specified number of characters on a line
+    full_data = file.read() #Gets all of the text from a file
     print(data)
     
 #-------------writing to files and creating files-------------------
@@ -28,3 +28,12 @@ with open ('file_handling_new_file.txt', mode = "w") as file:
     
 with open ('file_handling_new_file.txt', mode = "a") as file:
     file.writelines(["This is a new file2", "\nThis is another line"])
+
+#-----------------------Splitting a files contents------------------
+
+with open ('file_handling_test.txt', mode = "r") as file: # Newer, better way of handling files + is better at exception handling + automatically closes file
+    
+    full_data = file.read() #Gets all of the text from a file
+    
+    content_list = full_data.split("\n") #Split the text by \n
+    print(content_list)
