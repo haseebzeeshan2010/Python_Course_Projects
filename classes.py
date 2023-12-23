@@ -31,3 +31,18 @@ print(nathan.status(), "\n", roger.status())
 nathan.pay()
 print("After payment")
 print(nathan.status(), "\n", roger.status())
+
+
+#--------------multi-level-inheritance-----------
+
+class A:  #parent class
+    a = 1
+
+class B(A): #child of A, but parent of C
+    a = 2
+
+class C(B): #Child of B
+    pass
+
+c = C()
+print(c.a)
